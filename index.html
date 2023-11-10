@@ -20,16 +20,51 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="headline--lg">Headline large</div>
-    <div class="headline--md">Headline medium</div>
-    <div class="headline--sm">Headline small</div>
-    <div class="title--lg">Title large</div>
-    <div class="title--md">Title medium</div>
-    <div class="title--sm">Title small</div>
-    <div class="body--lg">Body large</div>
-    <div class="body--md">Body medium</div>
-    <div class="label--md">Label medium</div>
+    <!-- Header -->
+    <header class="main__header">
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="Wealthome" />
+        </a>
+        <nav class="main__nav" data-navbar="">
+          <ul class="main__navbar--list">
+            <li>
+              <a href="#" class="main__navbar--link label-md active">Home</a>
+            </li>
+            <li>
+              <a href="#" class="main__navbar--link label-md">Rent</a>
+            </li>
+            <li>
+              <a href="#" class="main__navbar--link label-md">Sell</a>
+            </li>
+            <li>
+              <a href="#" class="main__navbar--link label-md">Buy</a>
+            </li>
+            <li>
+              <a href="#" class="main__navbar--link label-md">About</a>
+            </li>
+          </ul>
 
+          <div class="nav--wrapper">
+            <a href="#" class="btn--link label-md">Login</a>
+            <a href="#" class="btn btn--fill label-md">Get Started</a>
+          </div>
+        </nav>
+
+        <button
+          class="nav__toggle--btn icon--btn"
+          aria-label="toggle main__nav"
+          data-nav-toggler=""
+        >
+          <span class="material-symbols-rounded open" aria-hidden="true"
+            >menu</span
+          >
+          <span class="material-symbols-rounded close" aria-hidden="true"
+            >close</span
+          >
+        </button>
+      </div>
+    </header>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
