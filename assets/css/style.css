@@ -9,7 +9,7 @@
   --clr-neutral-100: hsl(216, 100%, 99%); /* neutral 100 */
   --clr-neutral-150: hsl(217, 44%, 96%); /* neutral 98 */
   --clr-netural-175: hsl(220, 26%, 93%); /* neutral 95 */
-  --clr-netural-200: hsl(213, 17%, 88%); /* neutral 90 */
+  --clr-neutral-200: hsl(213, 17%, 88%); /* neutral 90 */
   --clr-neutral-225: hsl(216, 9%, 78%); /* neutral 80 */
   --clr-neutral-250: hsl(217, 4%, 58%); /* neutral 60 */
   --clr-neutral-275: hsl(214, 3%, 49%); /* neutral 50 */
@@ -95,6 +95,10 @@ select {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 p, 
@@ -211,6 +215,24 @@ body {
   #UTILITY 
 \*-----------------------------------*/
 
+.wrapper {
+  padding-inline: 1rem;
+  max-width: 36.25rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.material-symbols-rounded {
+  display: block;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  font-variation-settings: 
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 0;
+  }
 
 
 
@@ -219,17 +241,135 @@ body {
   #COMPONENT
 \*-----------------------------------*/
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem;
+  height: 3rem;
+  padding-inline: 1.5rem;
+  border-radius: var(--radius-full);
+  max-width: max-content;
+  transition: var(--transition-quick) var(--transition-quick);
+}
 
+.btn--fill {
+  background-color: var(--clr-primary-100);
+  color: var(--clr-neutral-100);
+}
+
+.btn--fill:where(:hover, :focus) {
+  background-color: var(--clr-netural-200);
+  box-shadow: var(--shadow-1);
+}
+
+.btn--fill:where(:active, :focus-visible) {
+  background-color: var(--clr-primary-300);
+}
+
+.btn--outline {
+  color: var(--clr-primary-100);
+  box-shadow: inset 0 0 0 2px var(--clr-primary-100);
+}
+
+.btn--outline:where(:hover, :focus, :focus-visible) {
+  color: var(--clr-neutral-100);
+}
+
+.btn--outline:hover {
+  background-color: var(--clr-primary-100);
+}
+
+.btn--outline:where(:active, :focus-visible) {
+  background-color: var(--clr-primary-300);
+}
+
+.icon--btn {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-netural-600);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-3);
+  transition: var(--transition-quick) var(--transition-quick);
+}
+
+.icon--btn:where(:hover, :focus-visible) {
+  background-color: var(--clr-neutral-200);
+}
 
 
 
 /*-----------------------------------*\
-  #HEADER
+  #HEADER & NAV
 \*-----------------------------------*/
 .logo {
   display: block;
   width: 11.875rem;
   height: 1.25rem;
+}
+
+.main__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6.25rem;
+  z-index: 4;
+}
+
+.main__header.active {
+  background-color: var(--clr-primary-700);
+  height: 4.5rem;
+  animation: slide_in 500ms ease forwards;
+}
+
+@keyframes slide_in {
+  0% { transform: translateY(-100%);}
+  100% { transform: translateY(0);}
+}
+
+.main__header .wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav__toggle--btn .close,
+.nav__toggle--btn.active .open {
+  display: none;
+}
+
+.nav__toggle--btn .open,
+.nav__toggle--btn.active .close {
+  display: block;
+}
+
+.main__nav {
+  position: absolute;
+  top: 85%;
+  right: 1rem;
+  background-color: var(--clr-neutral-100);
+  min-width: 16.25rem;
+  padding: 0.625rem;
+  border-radius: var(--radius-lg);
+  visibility: hidden; 
+  opacity: 0;
+  scale: 0.4; 
+  transition: var(--transition-quick) var(--transition-quick);
+  box-shadow: var(--shadow-1);
+  transform-origin: top right;
+  z-index: 4;
+}
+
+.main__nav.active {
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
 }
 
 
