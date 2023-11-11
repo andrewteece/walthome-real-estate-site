@@ -149,8 +149,19 @@ body {
   color: var(--clr-neutral-700);
   font-size: var(--fs-200);
   line-height: 1.5;
-  height: 100vh;
-  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: .75rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--clr-neutral-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-neutral-250);
+  border-radius: .25rem;
 }
 
 
@@ -234,6 +245,9 @@ body {
   'opsz' 0;
   }
 
+  .flow-content > * + * {
+    margin-top: var(--flow-spacer, 1em);
+}
 
 
 
@@ -392,9 +406,13 @@ body {
   padding-block-start: .875rem;
 }
 
-:is(.main__navbar--link, btn--link):is(:hover, :focus-visible),
+:is(.main__navbar--link, .btn--link):is(:hover, :focus-visible),
 .main__nav--link.active {
   color: var(--clr-primary-100);
+}
+
+.main__nav .btn {
+  min-width: 100%;
 }
 
 
