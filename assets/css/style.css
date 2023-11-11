@@ -259,8 +259,9 @@ body {
 }
 
 .btn--fill:where(:hover, :focus) {
-  background-color: var(--clr-netural-200);
-  box-shadow: var(--shadow-1);
+  background-color: var(--clr-neutral-200);
+  color: var(--clr-primary-200);
+  transition: all 400ms ease-in-out;
 }
 
 .btn--fill:where(:active, :focus-visible) {
@@ -370,6 +371,30 @@ body {
   visibility: visible;
   opacity: 1;
   scale: 1;
+}
+
+.main__nav,
+.main__nav--list,
+.nav--wrapper {
+  display: grid;
+  gap: .8rem;
+}
+
+.main__navbar--link,
+.btn--link {
+  color: var(--clr-neutral-350);
+  padding: .375rem .75rem;
+  transition: var(--transition-quick) var(--transition-ease);
+} 
+
+.btn--link {
+  border-block-start: 1px solid var(--clr-neutral-200);
+  padding-block-start: .875rem;
+}
+
+:is(.main__navbar--link, btn--link):is(:hover, :focus-visible),
+.main__nav--link.active {
+  color: var(--clr-primary-100);
 }
 
 
