@@ -217,7 +217,7 @@ body {
   line-height: 1.4;
 }
 
-.label-md {
+.label--md {
   font-size: var(--fs-100);
   font-weight: var(--fw-regular);
 }
