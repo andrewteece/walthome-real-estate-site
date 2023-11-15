@@ -422,6 +422,15 @@ body {
   #HERO
 \*-----------------------------------*/
 
+.hero__banner {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  background-image: linear-gradient(var(--clr-primary-700), var(--clr-primary-200));
+  color: var(--clr-neutral-200);
+}
 
 
 
