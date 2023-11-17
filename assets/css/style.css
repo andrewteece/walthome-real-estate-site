@@ -428,7 +428,7 @@ body {
 
 .hero {
   position: relative;
-  background-image: linear-gradient(var(--clr-primary-700), var(--clr-primary-200));
+  background-image: linear-gradient(var(--clr-primary-700), var(--clr-primary-800));
   color: var(--clr-neutral-200);
   padding-block: 8.125rem 3.75rem;
   overflow: hidden;
@@ -469,7 +469,7 @@ body {
 }
 
 .search--item .search--item-field:where(:hover, :focus) {
-  color: var(--clr-netural-175);
+  color: var(--clr-neutral-250);
 }
 
 .search--item :where(.label, .material-symbols-rounded) {
@@ -490,6 +490,38 @@ body {
   translate: 0 -50%;
   color: var(--clr-primary-100);
 } 
+
+.search--btn {
+  background: var(--clr-primary-100);
+  color: var(--clr-neutral-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: .75rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition-quick) var(--transition-quick);
+}
+
+.search--btn:where(:hover, :focus) {
+  background-color: var(--clr-primary-300);
+}
+
+.search--btn:where(:active, :focus-visible) {
+  background-color: var(--clr-primary-400);
+}
+
+.hero .bg--pattern {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 0;
+  translate: 0 -50%;
+  min-height: 100%;
+  pointer-events: none;
+  z-index: -2;
+}
+
 
 
 /*-----------------------------------*\
