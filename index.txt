@@ -79,7 +79,7 @@ New
 aria-label = add to favorite
 <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
 
-$710.68
+1-  $710.68
 COVA Home Realty
 1901 Thornridge Cir. Shiloh, Hawaii 81063
 
@@ -92,7 +92,9 @@ COVA Home Realty
 <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
 1430 sqft 
 
-alt = Exit Realty
+=============================
+
+2- alt = Exit Realty
 
 $630.44
 Exit Realty
@@ -102,8 +104,9 @@ Exit Realty
 5 Bed
 4 Bath
 1630 sqft
+============================
 
-alt = The Real Estate Group
+3- alt = The Real Estate Group
 
 $475.22
 The Real Estate Group
@@ -113,8 +116,9 @@ The Real Estate Group
 8 Bed
 5 Bath
 1240 sqft
+============================
 
-alt = 757 Realty
+4- alt = 757 Realty
 
 $576.28
 757 Realty
@@ -125,7 +129,9 @@ $576.28
 6 Bath
 1260 sqft
 
-alt = Beach Pros Realty Inc.
+===========================
+
+5- alt = Beach Pros Realty Inc.
 
 $473.85
 Beach Pros Realty Inc.
@@ -136,7 +142,9 @@ Beach Pros Realty Inc.
 8 Bath
 2350 sqft
 
-alt = Keller Williams Elite Town Center
+===========================
+
+6- alt = Keller Williams Elite Town Center
 
 $105.55
 Keller Williams Elite Town Center
@@ -147,7 +155,9 @@ Keller Williams Elite Town Center
 8 Bath
 1950 sqft
 
-alt = All Pros Real Estate
+=============================
+
+7- alt = All Pros Real Estate
 
 $739.65
 All Pros Real Estate
@@ -158,7 +168,9 @@ All Pros Real Estate
 4 Bath
 1580 sqft
 
-alt = FIT Realty
+===============================
+
+8- alt = FIT Realty
 
 $948.55
 
