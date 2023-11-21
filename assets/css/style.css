@@ -249,6 +249,26 @@ body {
     margin-top: var(--flow-spacer, 1em);
 }
 
+.section {
+  padding-block-end: 3.75rem;
+}
+
+.title__wrapper {
+  margin-block-end: 2rem;
+}
+
+.img--holder {
+  aspect-ratio: var(--width) /  var(--height);
+  background-color: var(--clr-neutral-225);
+  overflow: hidden;
+}
+
+.img--cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 
 /*-----------------------------------*\
@@ -315,7 +335,75 @@ body {
   background-color: var(--clr-neutral-200);
 }
 
+.badge {
+  display: grid;
+  place-items: center;
+  max-width: max-content;
+  height: 2rem;
+  padding-inline: 1rem;
+  background-color: var(--clr-secondary-300);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-3);
+}
 
+.card {
+  box-shadow: var(--shadow-4);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition-quick) var(--transition-ease);
+}
+
+.card:where(:hover, :focus-within) {
+  box-shadow: var(--shadow-4);
+}
+
+.card__banner {
+  position: relative;
+}
+
+.card__banner .img--cover {
+  transition: var(--transition-quick) var(--transition-ease);
+}
+
+.card:where(:hover, :focus-within) .img--cover {
+  scale: 1.05;
+  rotate: 2deg;
+}
+
+.card :where(.badge, .icon--btn) {
+  position: absolute;
+  top: 1.25rem;
+}
+
+.card .badge {
+  left: 1.25rem;
+}
+
+.card .icon--btn {
+  right: 1.25rem;
+  opacity: 0;
+  visibility: hidden;
+  scale: 0.8;
+  transition: var(--transition-quick) var(--transition-ease);
+}
+
+.fav--btn {
+  color: var(--clr-error);
+}
+
+.fav--btn.active .material-symbols-rounded {
+  font-variation-settings: 'FILL' 1;
+}
+
+.card:where(:hover, :focus-within) .icon--btn {
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__content {
+  padding: 1.25rem 1.25rem 1.5rem;
+}
 
 /*-----------------------------------*\
   #HEADER & NAV
@@ -470,7 +558,9 @@ body {
 
 .search--item .search--item-field:where(:hover, :focus) {
   color: var(--clr-neutral-250);
-}
+} 
+
+
 
 .search--item :where(.label, .material-symbols-rounded) {
   position: absolute;
