@@ -665,6 +665,39 @@ body {
   #FEATURE
 \*-----------------------------------*/
 
+.feature__banner {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.feature__content {
+  padding: 1.5rem 1rem 0;
+}
+
+.feature__content .feature__text {
+  margin-block: 1rem;
+}
+
+.feature__text .feature__item {
+  color: var(--clr-neutral-350);
+}
+
+.feature__list {
+  display: grid;
+  gap: .75rem;
+}
+
+.feature__item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.feature--icon {
+  color: var(--clr-primary-100);
+  font-size: 2.2rem;
+}
 
 
 
