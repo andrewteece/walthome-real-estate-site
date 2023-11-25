@@ -711,8 +711,8 @@ body {
   border-radius: var(--radius-xlg);
   background: linear-gradient(
     0deg,
-    #0000004D,
-    #0000004d
+    rgba(0, 0, 0, 0.302),
+    rgba(0, 0, 0, 0.302)
   ),
   url('../../assets/images/video-card.jpg')
   ;
@@ -720,6 +720,31 @@ body {
   background-size: cover;
   display: grid;
   place-items: center;
+}
+
+.play--btn {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-primary-100);
+  border-radius: var(--radius-circle);
+  animation: pulse 1.5s var(--transition-ease) forwards infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #ffffff80;
+  }
+  100% {
+    box-shadow: 0 0 0 20px #ffffff00;
+  }
+}
+
+.play--btn .material-symbols-rounded {
+  font-size: 4rem;
+  font-variation-settings: 'FILL' 1;
 }
 
 
