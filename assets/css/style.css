@@ -706,6 +706,21 @@ body {
   #VIDEO
 \*-----------------------------------*/
 
+.video__card {
+  height: 16.25rem;
+  border-radius: var(--radius-xlg);
+  background: linear-gradient(
+    0deg,
+    #0000004D,
+    #0000004d
+  ),
+  url('../../assets/images/video-card.jpg')
+  ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
 
 
 
