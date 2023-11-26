@@ -514,6 +514,8 @@ body {
 :is(.main__navbar--link, .btn--link):is(:hover, :focus-visible),
 .main__nav--link.active {
   color: var(--clr-primary-100);
+  border-bottom: 2px solid var(--clr-primary-200);
+  transition: all 400ms ease-in-out;
 }
 
 .main__nav .btn {
