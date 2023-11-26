@@ -851,6 +851,54 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
+.footer {
+  background-color: var(--clr-primary-800);
+  color: var(--clr-neutral-200);
+}
+
+.footer__top .wrapper {
+  padding-block: 3.75rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer__text {
+  margin-block: 1rem;
+}
+
+.footer__list--title {
+  margin-block-end: 1rem;
+  text-decoration: underline;
+}
+
+.footer__list {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__link {
+  transition: var(--transition-quick) var(--transition-quick);
+}
+
+.footer__link:where(:hover, :focus-visible) {
+  color: var(--clr-primary-100);
+  border-bottom: 2px solid var(--clr-accent-100);
+}
+
+.social__list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__bottom {
+  border-block-start: 1px solid var(--clr-neutral-500);
+}
+
+.footer__bottom .wrapper {
+  display: grid;
+  justify-content: center;
+  padding-block: 1.25rem;
+}
 
 
 
