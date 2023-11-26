@@ -658,6 +658,11 @@ body {
   #FEATURE
 \*-----------------------------------*/
 
+.feature {
+  background-color: var(--clr-neutral-200);
+  padding-block: 2rem;
+}
+
 .feature__banner {
   aspect-ratio: 3 / 2;
   overflow: hidden;
@@ -713,6 +718,7 @@ body {
   background-size: cover;
   display: grid;
   place-items: center;
+  margin-top: 2rem;
 }
 
 .play--btn {
@@ -746,6 +752,11 @@ body {
 /*-----------------------------------*\
   #STORY
 \*-----------------------------------*/
+
+.story {
+  background-color: var(--clr-neutral-200);
+  padding-top: 2rem;
+}
 
 .story .section__subtitle {
   color: var(--clr-primary-100);
@@ -906,3 +917,113 @@ body {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 45rem;
+  }
+
+  .section {
+    padding-block-end: 5rem;
+  }
+
+  .title__wrapper,
+  .story .title__wrapper {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    gap: 2.5rem;
+    margin-block-end: 3rem;
+  }
+
+  .hero {
+    padding-block: 10rem 6.25rem;
+  }
+
+  .search--bar {
+    /*grid-template-columns: 10rem 10rem 1fr max-content; */
+    gap: 0;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+  }
+
+  .search--item .material-symbols-rounded {
+    display: none;
+  }
+
+  .search--item:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 100%;
+    bottom: 1rem;
+    width: 1px;
+    background-color: var(--clr-neutral-200);
+  }
+
+  .search--btn {
+    height: 100%;
+    margin-inline-start: .5rem;
+    padding-inline: 1rem;
+  }
+
+  .property {
+    padding-block-start: 5rem;
+  }
+
+  .property .section__text {
+    margin-block-end: 0;
+  }
+
+  .feature__content {
+    padding-block-start: 2rem;
+  }
+
+  .feature__content .feature__text {
+    margin-block: 1rem 1.5rem;
+    line-height: 1.7;
+  }
+
+  .feature__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .video__card {
+    min-height: 25rem;
+  }
+
+  .play--btn {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .play--btn .material-symbols-rounded {
+    font-size: 4.8rem;
+  }
+
+  .story .section__title {
+    margin-block: 1rem;
+  }
+
+  .avatar {
+    width: 5rem;
+    height: 3.75rem;
+  }
+
+  .story__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__top .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    padding-block: 5rem;
+  }
+
+  .footer__brand {
+    grid-column: 1 / 4;
+  }
+
+  .footer__text {
+    max-width: 25rem;
+  }
+}
