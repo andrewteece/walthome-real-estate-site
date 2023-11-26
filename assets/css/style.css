@@ -36,14 +36,14 @@
 
   --ff-primary: 'Montserrat', sans-serif;
 
-  --fs-base: 1rem;
-  --fs-100: 1.4rem; /* label md */
-  --fs-200: 1.6rem; /* body lg & md * label lg */
-  --fs-300: 1.8rem; /* title sm */
-  --fs-400: 2rem; /* title md */
-  --fs-500: 2.2rem; /* title lg */
-  --fs-600: 2.8rem; /* headline md & sm */
-  --fs-700: 3.6rem; /* headline lg */
+  
+  --fs-100: 1rem; /* label md */
+  --fs-200: 1.2rem; /* body lg & md * label lg */
+  --fs-300: 1.4rem; /* title sm */
+  --fs-400: 1.6rem; /* title md */
+  --fs-500: 1.8rem; /* title lg */
+  --fs-600: 2.4rem; /* headline md & sm */
+  --fs-700: 3.2rem; /* headline lg */
 
   --fw-regular: 400;
   --fw-semiBold: 600;
@@ -190,13 +190,13 @@ body {
 .body--lg {
   font-size: var(--fs-200);
   font-weight: var(--fw-regular);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .body--md {
   font-size: var(--fs-100);
   font-weight: var(--fw-regular);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .label--md {
