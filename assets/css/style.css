@@ -1027,3 +1027,36 @@ body {
     max-width: 25rem;
   }
 }
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 59.375rem;
+  }
+
+  .nav__toggle--btn {
+    display: none;
+  }
+
+  .main__nav,
+  .main__nav--list,
+  .nav--wrapper {
+    all: unset; 
+    display: flex;
+    
+    align-items: center;
+  }
+
+  .main__nav,
+  .main__nav--list {
+    flex-grow: 1;
+  }
+
+  .main__nav--list {
+    justify-content: center;
+  }
+
+  .main__navbar--link,
+  .btn--link {
+    color: var(--clr-neutral-225);
+  }
+}
